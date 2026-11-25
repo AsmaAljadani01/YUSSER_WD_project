@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookings | YUSSER</title>
+  <meta name="description" content="List of all Hajj and Umrah bookings.">
+  <link rel="icon" type="image/png" href="media/header-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Spectral:wght@500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/config.js"></script>
+  <script src="js/campaigns-data.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="bar">
+      <a class="brand" href="index.html">
+        <img src="media/header-logo.png" alt="Ministry of Hajj and Umrah">
+        <span class="brand-name">YUSSER</span>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="campaigns.html">Campaigns</a>
+          <a href="viewBooking.html" aria-current="page">View bookings</a>
+          <a href="contactUS.html">Contact us</a>
+          <a href="aboutUS.html">About us</a>
+          <a class="nav-cta" href="booking.html">Book now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <h1>Bookings</h1>
+      <p class="lead">Every booking saved so far.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="toolbar">
+          <p id="count" class="count" aria-live="polite"></p>
+          <label class="search"><span class="sr-only">Search bookings</span>
+            <input id="search" type="search" placeholder="Search by name, email or campaign"></label>
+        </div>
+        <div class="table-wrap">
+          <table id="bookingTable">
+            <thead>
+              <tr>
+                <th scope="col">Full name</th><th scope="col">Mobile</th><th scope="col">Email</th>
+                <th scope="col">Date of birth</th><th scope="col">Campaign</th><th scope="col">Trip</th>
+                <th scope="col">Guide language</th><th scope="col">Special requests</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div id="emptyMsg" class="empty" hidden>
+          <p>No bookings yet.</p>
+          <a class="btn btn-gold" href="booking.html">Make the first booking</a>
+        </div>
+        <p id="modeNote" class="note" hidden></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <p class="foot-brand">YUSSER</p>
+      <nav class="foot-nav" aria-label="Footer"><a href="index.html">Home</a> <a href="campaigns.html">Campaigns</a> <a href="viewBooking.html">View bookings</a> <a href="contactUS.html">Contact us</a> <a href="aboutUS.html">About us</a></nav>
+      <p class="foot-note">Web Development Project 2025</p>
+    </div>
+  </footer>
+</body>
+</html>

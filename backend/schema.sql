@@ -1,0 +1,26 @@
+CREATE DATABASE IF NOT EXISTS project CHARACTER SET utf8mb4;
+USE project;
+
+CREATE TABLE IF NOT EXISTS booking (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  fullname VARCHAR(100) NOT NULL,
+  mobile VARCHAR(10) NOT NULL,
+  dob DATE NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  campaign_selection VARCHAR(20) NOT NULL,
+  trip_type VARCHAR(10) NOT NULL,
+  guide_language VARCHAR(100) NOT NULL,
+  special_requests VARCHAR(600) DEFAULT ''
+);
+
+CREATE TABLE IF NOT EXISTS contact (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(100) NOT NULL,
+  last_name VARCHAR(100) NOT NULL,
+  mobile VARCHAR(10) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  language VARCHAR(20) NOT NULL,
+  message TEXT NOT NULL,
+  dob DATE NOT NULL,
+  gender VARCHAR(10) NOT NULL
+);
